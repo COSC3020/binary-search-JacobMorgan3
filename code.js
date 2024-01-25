@@ -1,4 +1,4 @@
-function binarysearch (a, b) {
+function binarySearch (a, b) {
     var start = 0;
     var end = a.length;
     var midpoint = Math.floor(((end - start) / 2) + start);
