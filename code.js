@@ -1,4 +1,4 @@
-var array = [5,6,7,7,9,10,11,12];
+var array = [4,5,6,7,7,9,10,11,12];
 
 function binarySearch (a, b) {
     var start = 0;
@@ -9,13 +9,15 @@ function binarySearch (a, b) {
         return -1;}
 
     while (true) {
-        //console.log(midpoint);)
-        if ((end - start) <= 0)
+
+        if ((end - start) <= 0) 
             return -1;
 
         midpoint = Math.floor(((end - start) / 2) + start);
 
         if (b == a[midpoint]) {
+            while (b == (a[midpoint - 1]))
+                midpoint = midpoint - 1;
             return midpoint;}
 
         else if (b < a[midpoint]) {
@@ -26,4 +28,4 @@ function binarySearch (a, b) {
     }      
 }
 
-console.log(binarySearch(array, 8));
+console.log(binarySearch(array, 7));
