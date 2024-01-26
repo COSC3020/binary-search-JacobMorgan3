@@ -1,3 +1,5 @@
+var array = [5,6,7,7,9,10,11,12];
+
 function binarySearch (a, b) {
     var start = 0;
     var end = a.length;
@@ -20,7 +22,8 @@ function binarySearch (a, b) {
             end = midpoint;}
 
         else if(b > a[midpoint]) {
-           start = midpoint}
-          
+           start = midpoint + 1}
     }      
 }
+
+console.log(binarySearch(array, 8));
