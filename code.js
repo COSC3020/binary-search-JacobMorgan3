@@ -1,4 +1,3 @@
-var array = [1,2,3,5,5,6];
 
 function binarySearch (a, b) {
     var start = 0;
@@ -27,5 +26,3 @@ function binarySearch (a, b) {
            start = midpoint + 1}
     }      
 }
-
-console.log(binarySearch(array, 6));
